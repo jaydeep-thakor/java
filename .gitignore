@@ -1,0 +1,13 @@
+*.class
+*.log
+
+# IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Build folders
+bin/
+out/
+build/
