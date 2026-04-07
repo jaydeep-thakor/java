@@ -77,8 +77,15 @@ class Operators {
 
         // 🔹 8. instanceof Operator
         // Is str created from String type?
+        // instanceof only works for Non-Primitive types
         String str = "Hello";
         System.out.println("\ninstanceof:");
         System.out.println(str instanceof String);
+        Integer n = 9;
+        Double d = 20.10;
+        Float f = 5.6F;
+        System.out.println(n instanceof Integer);   // true
+        System.out.println(d instanceof Double);    // true
+        System.out.println(f instanceof Float);     // true
     }
 }

@@ -15,8 +15,8 @@ class Literals {
         System.out.println(num); // Output: 1000000
 
         // 'e' represents scientific notation (exponent).
-        // 12e10 means 12 × 10^10 (i.e., 120000000000.0)
-        double num1 = 12e10;
+        // 12e5 means 12 × 10^5 (i.e., 1200000.0)
+        double num1 = 12e5;
         System.out.println(num1); // (Java prints large numbers in scientific notation)
         System.out.printf("%.0f", num1); // If you want full number output (no scientific format)
 

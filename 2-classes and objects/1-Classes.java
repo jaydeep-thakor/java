@@ -1,4 +1,11 @@
 // creating a class, a class will have method, can also have variables
+
+// Function  →  stands alone, not inside any class
+// Method    →  lives inside a class
+// Java has NO standalone functions
+// EVERYTHING in Java lives inside a class
+// So in Java → all functions are methods
+    
 class Calculator{
     public int add(int n1,int n2){
         int sum = n1 + n2;
