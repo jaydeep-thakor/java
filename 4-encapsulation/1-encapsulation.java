@@ -1,19 +1,39 @@
 class Human{
 
-    int age;
-    private String name; // when we write private it can be accessible only within the class
+    // "private" are accessible only within the same class (including all its methods).
+    private String name;
+
+    // setter
+    // public void setName(String name, Human obj){
+        // name = name; // this is wrong because name is assign name to it self which which is null(instance variable) at the top
+        // 1st way
+        // Human obj1 = obj;
+        // obj1.name = name;
+    // }
+
+    // setter
+    // best way using this
+    public void setName(String name){
+        this.name = name;
+    }
+
+    // getter
+    public String getName(){
+        return name;
+    }
 
 }
 
-class Encapsulation{
+class Encapsulation{  
     public static void main(String a[]){
 
         Human obj = new Human();
-
-        obj.age = 27;
-        obj.name = "hailee";
-
-        System.out.println(obj.name);
+        // 1st way
+        // obj.setName("Jaydeep", obj);
+        
+        // best way
+        obj.setName("Jaydeep");
+        System.out.println(obj.getName());
 
 
     }
